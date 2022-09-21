@@ -111,7 +111,7 @@ print()
 phone = phonebook.get("Chri", "KEY NOT FOUND")
 print(phone)
 
-#phonebook.clear()
+#phonebook.clear() - cleares out the elements of the phonebook but doesnt get rid of the phonebook itself
 #print{phonebook}
 
 
@@ -120,29 +120,31 @@ print()
 print('*****  end section 6 ********')
 print()
 
-'''
-
 print()
 print('*****  start section 7 - using pop method ********')
 print()
 
-
-
-
+#remove specified key and return the corresponding value. If key is not found, d is returned if given, otherwise KeyError is raised
+###a = phonebook.pop('Chris', 'not found')
+###print(a)
+print(phonebook)
+#Chris will no longer be found in phonebook, but is instead now in the variable a
 
 
 print()
 print('*****  end section 7 ********')
 print()
 
-
-
 print()
 print('*****  start section 8 - using popitem ********')
 print()
 
 
-
+#pop the key value out of the dicitonary, specifically the last item in the dictionary
+print(phonebook)
+###a = phonebook.popitem()
+###print(a)
+print(phonebook)
 
 
 
@@ -150,24 +152,21 @@ print()
 print('*****  end section 8 ********')
 print()
 
-
-
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
+list_of_keys = list(phonebook)
+print(list_of_keys)
+random_key = random.choice(list_of_keys)
+print(random_key)
+random_value = phonebook[random_key]
+print(random_value)
 
-
-
+# aleternativly
+random_value = phonebook[random.choice(list(phonebook))]
+print(random_value)
 
 print()
 print('*****  end section 9 ********')
 print()
-
-
-'''
-
-
-
-
-
