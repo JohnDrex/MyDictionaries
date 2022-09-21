@@ -27,7 +27,7 @@ codes = {
 
 NewText = ""
   
-for i in range(0, len(text)):
+for i in range(len(text)):
     if text[i] in codes.keys():
         NewText += codes[text[i]]
     else:
